@@ -1,2 +1,15 @@
-%h1 Groups#index
-%p Find me in app/views/groups/index.html.haml
+.container
+  %table.bordered
+    %thead
+      %tr
+        %th Nom
+        %th victoires
+        %th défaites
+        %th points
+    %tbody
+      - for player in @players
+        %tr
+          %th= player.first_name + " " + player.last_name
+          %th= player.win
+          %th= player.lost
+          %th= player.points

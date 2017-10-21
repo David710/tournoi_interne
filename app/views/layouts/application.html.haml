@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title CalculMental
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+  %body
+    %nav
+      .nav-wrapper
+        %ul{class: "left hide-on-med-and-down", id:"nav-mobile"}
+          %li
+            %a{href: "#"} Poules 1 Hommes
+          %li
+            %a{href: "#"} Poules 2 Hommes
+          %li
+            %a{href: "#"} Poules 3 Hommes
+          %li
+            %a{href: "#"} Tableau Final Hommes
+          %li
+            %a{href: "#"} Poules 1 Femmes
+          %li
+            %a{href: "#"} Poules 2 Femmes
+
+    = yield

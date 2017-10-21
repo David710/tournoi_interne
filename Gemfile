@@ -22,6 +22,11 @@ gem 'uglifier', '>= 1.3.0'
 # HAML
 gem 'haml-rails', '~> 1.0'
 
+# gem materialize
+gem 'materialize-sass'
+
+gem 'jquery-rails'
+
 # Use CoffeeScript for .coffee assets and views
 # gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -42,6 +47,8 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  # pour supprimer une readline error qui empeche d'ouvrir la console rails
+gem 'rb-readline', '~> 0.5.5'
 end
 
 group :development do
