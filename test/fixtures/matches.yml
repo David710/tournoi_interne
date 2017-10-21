@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player_1: MyString
+  player_2: MyString
+  score: 1
+  give_up: false
+  wo: false
+
+two:
+  player_1: MyString
+  player_2: MyString
+  score: 1
+  give_up: false
+  wo: false
