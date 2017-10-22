@@ -7,19 +7,63 @@
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
   %body
+    / dropdown
+    %ul{class: "dropdown-content", id:"dropdown-group1"}
+      %li
+        %a{href: "#"} Poule 1.1
+      %li
+        %a{href: "#"} Poule 1.2
+
+    %ul{class: "dropdown-content", id:"dropdown-group2"}
+      %li
+        %a{href: "#"} Poule 2.1
+      %li
+        %a{href: "#"} Poule 2.2
+      %li
+        %a{href: "#"} Poule 2.3
+      %li
+        %a{href: "#"} Poule 2.4
+
+    %ul{class: "dropdown-content", id:"dropdown-group3"}
+      %li
+        %a{href: "#"} Poule 3.1
+      %li
+        %a{href: "#"} Poule 3.2
+      %li
+        %a{href: "#"} Poule 3.3
+
+    %ul{class: "dropdown-content", id:"dropdown-group1f"}
+      %li
+        %a{href: "#"} Poule 1.1
+      %li
+        %a{href: "#"} Poule 1.2
+
+
     %nav
       .nav-wrapper
         %ul{class: "left hide-on-med-and-down", id:"nav-mobile"}
           %li
-            %a{href: "#"} Poules 1 Hommes
+            %a{href: "#", class: "dropdown-button", "data-activates" => "dropdown-group1"}
+              Poules 1 Hommes
+              %i{class: ["material-icons", "right"]}
+                arrow_drop_down
           %li
-            %a{href: "#"} Poules 2 Hommes
+            %a{href: "#", class: "dropdown-button", "data-activates" => "dropdown-group2"}
+              Poules 2 Hommes
+              %i{class: ["material-icons", "right"]}
+                arrow_drop_down
           %li
-            %a{href: "#"} Poules 3 Hommes
+            %a{href: "#", class: "dropdown-button", "data-activates" => "dropdown-group3"}
+              Poules 3 Hommes
+              %i{class: ["material-icons", "right"]}
+                arrow_drop_down
           %li
             %a{href: "#"} Tableau Final Hommes
           %li
-            %a{href: "#"} Poules 1 Femmes
+            %a{href: "#", class: "dropdown-button", "data-activates" => "dropdown-group1f"}
+              Poules 1 Femmes
+              %i{class: ["material-icons", "right"]}
+                arrow_drop_down
           %li
             %a{href: "#"} Poules 2 Femmes
 
