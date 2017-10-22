@@ -1,6 +1,6 @@
 class GroupsController < ApplicationController
   def index
-    @group = Group.where(name: "1.1").first
+    @group = Group.find(params[:id])
     @players = @group.players
   end
 end

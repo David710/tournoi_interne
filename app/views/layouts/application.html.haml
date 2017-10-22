@@ -10,33 +10,33 @@
     / dropdown
     %ul{class: "dropdown-content", id:"dropdown-group1"}
       %li
-        %a{href: "#"} Poule 1.1
+        = link_to "Poule 1.1", "/groups/1"
       %li
-        %a{href: "#"} Poule 1.2
+        = link_to "Poule 1.2", "/groups/2"
 
     %ul{class: "dropdown-content", id:"dropdown-group2"}
       %li
-        %a{href: "#"} Poule 2.1
+        = link_to "Poule 2.1", "/groups/3"
       %li
-        %a{href: "#"} Poule 2.2
+        = link_to "Poule 2.2", "/groups/4"
       %li
-        %a{href: "#"} Poule 2.3
+        = link_to "Poule 2.3", "/groups/5"
       %li
-        %a{href: "#"} Poule 2.4
+        = link_to "Poule 2.4", "/groups/6"
 
     %ul{class: "dropdown-content", id:"dropdown-group3"}
       %li
-        %a{href: "#"} Poule 3.1
+        = link_to "Poule 3.1", "/groups/7"
       %li
-        %a{href: "#"} Poule 3.2
+        = link_to "Poule 3.2", "/groups/8"
       %li
-        %a{href: "#"} Poule 3.3
+        = link_to "Poule 3.3", "/groups/9"
 
     %ul{class: "dropdown-content", id:"dropdown-group1f"}
       %li
-        %a{href: "#"} Poule 1.1
+        = link_to "Poule 1.1", "/groups/11"
       %li
-        %a{href: "#"} Poule 1.2
+        = link_to "Poule 1.2", "/groups/12"
 
 
     %nav
@@ -58,13 +58,13 @@
               %i{class: ["material-icons", "right"]}
                 arrow_drop_down
           %li
-            %a{href: "#"} Tableau Final Hommes
+            = link_to "Tableau final Hommes", "/groups/10"
           %li
             %a{href: "#", class: "dropdown-button", "data-activates" => "dropdown-group1f"}
               Poules 1 Femmes
               %i{class: ["material-icons", "right"]}
                 arrow_drop_down
           %li
-            %a{href: "#"} Poules 2 Femmes
+            = link_to "Poule 2 Femmes", "/groups/13"
 
     = yield
