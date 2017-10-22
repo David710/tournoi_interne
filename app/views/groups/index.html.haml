@@ -22,10 +22,13 @@
     %table.bordered
       %thead
         %tr
+          %th
           %th Match
           %th Score
       %tbody
         - for i in 0..(@players.length-2)
           - for j in (i+1)..(@players.length-1)
             %tr
+              %th= link_to "Saisir le score", "matches/#{@group.id}/new/#{{player1: @players[i].first_name + " " + @players[i].last_name, player2: @players[j].first_name + " " + @players[j].last_name}}"
               %th= @players[i].first_name + " " + @players[i].last_name + " - " + @players[j].first_name + " " + @players[j].last_name
+              %th= set_match_score(@players[i].first_name + " " + @players[i].last_name, @players[j].first_name + " " + @players[j].last_name)

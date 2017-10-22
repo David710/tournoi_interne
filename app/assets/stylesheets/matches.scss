@@ -1,3 +1,9 @@
-.score-table, .matches-table {
+.form-score {
   margin-top: 50px;
+}
+
+#score_set1_1, #score_set1_2, #score_set2_1, #score_set2_2, #score_set3_1, #score_set3_2{
+  width: 20%;
+  margin-right: 15px;
+  text-align: center;
 }

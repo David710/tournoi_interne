@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  get 'groups/index'
-  get '/groups/:id', to: 'groups#index'
-
   root 'groups#index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  get '/groups/:id', to: 'groups#show'
+  get '/groups/matches/:group_id/new/:players', to: 'matches#new'
+  get 'matches/:group_id/new/:players', to: 'matches#new'
+
+  post '/groups/matches/:group_id/new/:players', to: 'matches#create'
+  post 'matches/:group_id/new/:players', to: 'matches#create'
+
 end

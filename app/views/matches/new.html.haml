@@ -1,0 +1,40 @@
+.container
+  .form-score.center-align
+    %h3= @player1 + " vs " + @player2
+
+  = form_for @match, url: {action: "create"}, html: {class: "nifty_form"} do |f|
+    %p victoire de :
+    = radio_button_tag(:win, "player1")
+    = label_tag(:win_player1, @player1)
+    = radio_button_tag(:win, "player2")
+    = label_tag(:win_player2, @player2)
+
+    %table.bordered
+      %tbody
+        %tr
+          %th score
+          %th.center-align
+            %span= number_field(:score, :set1_1, in: 0..7)
+            %span /
+            %span= number_field(:score, :set1_2, in: 0..7)
+          %th.center-align
+            %span= number_field(:score, :set2_1, in: 0..7)
+            %span /
+            %span= number_field(:score, :set2_2, in: 0..7)
+          %th.center-align
+            %span= number_field(:score, :set3_1, in: 0..7)
+            %span /
+            %span= number_field(:score, :set3_2, in: 0..7)
+        %tr
+          %th
+          %th.center-align 1er set
+          %th.center-align 2eme set
+          %th.center-align 3eme set
+
+    = f.check_box :give_up
+    = f.label :give_up, "Abandon"
+    = f.check_box :wo
+    = f.label :wo, "WO"
+
+    %div
+      = f.submit "valider", class: "btn waves-effect waves-light"

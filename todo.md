@@ -1,5 +1,4 @@
 # To-Do
-- mettre en forme la view des matches
-- lire un csv pour entrer les particpants
-- mettre en place les liens de poules
-- mettre en place le système d'enregistrement des scores
+- calculer les # victoires défaites et points
+- surligner le vainqueur des matchs
+- lire un csv pour entrer les particpants (voir les poules)
