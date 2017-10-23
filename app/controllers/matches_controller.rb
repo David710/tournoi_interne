@@ -38,9 +38,4 @@ class MatchesController < ApplicationController
     redirect_to "/groups/#{@group.id}"
   end
 
-  # private
-  #   def match_params
-  #     params.require(:article).permit(:title, :text)
-  #   end
-
 end

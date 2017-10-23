@@ -5,16 +5,16 @@
       %thead
         %tr
           %th Nom
-          %th victoires
-          %th défaites
-          %th points
+          %th.center-align victoires
+          %th.center-align défaites
+          %th.center-align points
       %tbody
         - for player in @players
           %tr
             %th= player.first_name + " " + player.last_name
-            %th= player.win
-            %th= player.lost
-            %th= player.points
+            %th.center-align= calc_scores(player)[:win]
+            %th.center-align= calc_scores(player)[:lost]
+            %th.center-align= calc_scores(player)[:score]
 
 
   .matches-table
