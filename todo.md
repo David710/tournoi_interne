@@ -1,4 +1,6 @@
 # To-Do
-- calculer les # victoires défaites et points
-- surligner le vainqueur des matchs
-- navbar comptible telephone
+
+- navbar compatible telephone
+- vérifier
+- déployer
+- seeder la database

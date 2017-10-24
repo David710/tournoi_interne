@@ -57,4 +57,19 @@ module GroupsHelper
     {win: win, lost: lost, score: score}
   end
 
+  def set_match_name(player1, player2)
+    # en entrée : le joueur 1 et le joueur 2
+    match = Match.where(["player_1 = ? and player_2 = ?", player1, player2]).last
+    if match
+      if match.winner == player1
+        html = '<span class= "winner">' + player1 + '</span>' + " - " + player2
+      else
+        html = player1 + " - " + '<span class= "winner">' + player2 + '</span>'
+      end
+    else
+      html = player1 + " - " + player2
+    end
+    html
+  end
+
 end

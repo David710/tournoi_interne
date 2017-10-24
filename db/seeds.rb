@@ -8,6 +8,21 @@
 
 require 'csv'
 
+csv_text = File.read(Rails.root.join('lib', 'seeds', 'tournoi_interne_groups.csv'))
+csv = CSV.parse(csv_text, :headers => true)
+csv.each do |row|
+
+  gp = Group.new
+  gp.name = row["Poule"]
+
+  puts gp
+  puts gp.name
+  gp.save
+
+end
+
+
+
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'tournoi_interne.csv'))
 csv = CSV.parse(csv_text, :headers => true)
 csv.each do |row|
