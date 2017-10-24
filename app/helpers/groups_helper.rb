@@ -8,8 +8,10 @@ module GroupsHelper
 
       if score.length == 6
         prez_score = score[0] + " / " + score[1] + " - " + score[2] + " / " + score[3] + " - " + score[4] + " / " + score[5]
-      else
+      elsif score.length == 4
         prez_score = score[0] + " / " + score[1] + " - " + score[2] + " / " + score[3]
+      else
+        prez_score = "saisir le score"
       end
       if match.give_up
         prez_score = prez_score + " ab"
