@@ -9,9 +9,9 @@
           %th.center-align défaites
           %th.center-align points
       %tbody
-        - for player in @players
+        - for player in @players.order(points: :desc, win: :desc)
           %tr
-            %th= player.first_name + " " + player.last_name
+            %th= player.first_name + " " + player.last_name + " (#{player.ranking})"
             %th.center-align= calc_scores(player)[:win]
             %th.center-align= calc_scores(player)[:lost]
             %th.center-align= calc_scores(player)[:score]

@@ -56,6 +56,7 @@ module GroupsHelper
     end
     lost = nb_matchs - win
     score = win * 2 + lost - wo
+
     {win: win, lost: lost, score: score}
   end
 
