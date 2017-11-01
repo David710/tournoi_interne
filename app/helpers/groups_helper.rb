@@ -36,8 +36,10 @@ module GroupsHelper
 
     group_player_list.each do |adv|
       adv_name = adv.first_name + " " + adv.last_name
-      matches_group << Match.where(["player_1 = ? and player_2 = ?", player_name, adv_name]).last
-      matches_group << Match.where(["player_1 = ? and player_2 = ?", adv_name, player_name]).last
+      # matches_group << Match.where(["player_1 = ? and player_2 = ?", player_name, adv_name]).last
+      # matches_group << Match.where(["player_1 = ? and player_2 = ?", adv_name, player_name]).last
+
+      matches_group << Match.where(["(player_1 = :player_name AND player_2 = :adv_name) OR (player_1 = :adv_name AND player_2 = :player_name)", { player_name: player_name, adv_name: adv_name }]).last
     end
 
     win = 0

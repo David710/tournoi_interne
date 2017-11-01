@@ -26,6 +26,7 @@
           %th Match
           %th Score
       %tbody
+        - @players = @players.order(:id)
         - for i in 0..(@players.length-2)
           - for j in (i+1)..(@players.length-1)
             %tr
