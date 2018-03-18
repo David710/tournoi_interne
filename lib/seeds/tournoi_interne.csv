@@ -1,59 +1,41 @@
 Nom,Prenom,classement,Poule
-ABDELLAOUI,Ahmed,NC,1.1
-BOUGHABA,Samir,NC,1.1
-FLEER,Reinhard,NC,1.1
-GLAY,Joel,40,1.1
-BAILLEUL,PASCAL,30/5,1.2
-DUTREY,Jean.Paul,40,1.2
-GARAY,Mauricio,NC,1.2
-UNDERHILL,Andrew,NC,1.2
-VIQUERAT,Thierry,NC,1.2
-BOURGEOIS,Antoine,30/2,2.1
-DELPOUVE,Arnaud,30/3,2.1
-LALLEMAND,Jérôme,NC,2.1
-MONNIER,Jean,NC,2.1
-TRAN,Duy,NC,2.1
-BALKANSKI,Yves,30/3,2.2
-DISLAIR,Emmanuel,30/3,2.2
-LANGOHR,David,30/3,2.2
-LE SAUZE,Nicolas,30/3,2.2
-REYDELLET,Guillaume,30/3,2.2
-DISLAIR,Geoffrey,30/3,2.3
-HIVERT,Emmanuel,30/4,2.3
-Lê,Joseph,NC,2.3
-LEPOIVRE,Michel,NC,2.3
-LEFROU,Eric,30/2,2.3
-LE DU,DENIS,40,2.4
-PARMENTIER,Christophe,30/5,2.4
-PERIN,Patrick,30/4,2.4
-POUTCHNINE,Pascal,30/4,2.4
-ALAMEDA,Stephane,30,3.1
-DARRAS,Jean.Baptiste,30,3.1
-DUTREY,BRUNO,15/5,3.1
-GUILLEMARD,Thibaut,ND,3.1
-KEMENOVIC,Manuel,30,3.1
-DAGOUSSET,Guillaume,30,3.2
-GUCCIA,Laurent,30/1,3.2
-KEMENOVIC,Mathieu,30,3.2
-MARTEAU,Julien,15/4,3.2
-PAQUOT,Igor,30/1,3.2
-DE GAUDEMONT,marc,30/2,3.3
-MOCELLIN,Didier,30/1,3.3
-ORZONI,Mathieu,NC,3.3
-RONDEPIERRE,Loïc,30/1,3.3
-SCHUHL,Thomas,30/1,3.3
-BEDNARSKI,David,15/2,final hommes
-REYDELLET,Sylvain,3/6,final hommes
-RONDEPIERRE,Denis,15/2,final hommes
-BEDNARSKI,Sandrine,30/3,1.1 femmes
-DISLAIR,Sophie,30/5,1.1 femmes
-GREBIN,Corinne,40,1.1 femmes
-LE SAUZE,Christelle,30/4,1.1 femmes
-VEIL,Claire,NC,1.1 femmes
-DAHLIN,KRISTINA,30/4,1.2 femmes
-LARUE,Veronique,30/3,1.2 femmes
-MONNIER ,Catherine,30/4,1.2 femmes
-REYDELLET,Estelle,30,1.2 femmes
-GROSSEMY,Patricia,30,2 femmes
-RONDEPIERRE,Evelyne,30/1,2 femmes
-SANGOUARD,Marie-Pierre,30/1,2 femmes
+LE SAUZE Christelle,DISLAIR Sophie,33,femmes
+BEDNARSKI Sandrine,MONNIER Catherine,31,femmes
+RONDEPIERRE Evelyne,LEBEGUE Claire,26,femmes
+FREY Marie_Alix,GREBIN Corinne,35,femmes
+DEWEZ Sandrine,SONIAK_DEFRESNE Annie,26,femmes
+FAYOUX Catherine,MASSAMBA Estelle,32,femmes
+REYDELLET Guillaume,RONDEPIERRE Denis,23,hommes 1
+BALKANSKI Yves,GUCCIA Laurent,28,hommes 1
+DARRAS Jean_Baptiste,ORZONI Mathieu,29,hommes 1
+POLLINA Jean_Pierre,LEPOIVRE Michel,33,hommes 1
+LE DU Denis,HIVERT Emmanuel,34,hommes 1
+RISTALDI Valentin,SOULLIER Geoffrey,38,hommes 1
+KEMENOVIC Mathieu,KEMENOVIC Solal,24,hommes 2
+PERRICHON Stephane,PAQUOT Igor,28,hommes 2
+LE SAUZE Nicolas,DISLAIR Emmanuel,30,hommes 2
+PARMENTIER Christophe,PERIN Patrick,33,hommes 2
+LALLEMAND Jérôme,BAILLEUL Pascal,36,hommes 2
+ABDELLAOUI Ahmed,GARAY Mauricio,38,hommes 2
+DE GAUDEMONT marc,MOCELLIN Didier,27,hommes 3
+DUTREY Bruno,DUTREY Jean_Paul,29,hommes 3
+DISLAIR Geoffrey,GUYON Thierry,31,hommes 3
+GLAY Joel,VIQUERAT Thierry,34,hommes 3
+DEBACKER Jan,PEUS Christophe,37,hommes 3
+POLLINA Benedicte,DE GAUDEMONT marc,24,mixte 1
+VEIL Claire,RONDEPIERRE Denis,26,mixte 1
+SANGOUARD Marie_pierre,BALKANSKI Yves,28,mixte 1
+SONIAK_DEFRESNE Annie,BAILLEUL Pascal,33,mixte 1
+FAYOUX Catherine,GLAY Joel,36,mixte 1
+DELPOUVE Catherine,DUTREY Jean_Paul,34,mixte 1
+DEWEZ Sandrine,DISLAIR Emmanuel,25,mixte 2
+MONDOLLOT Sophie,POLLINA Jean_Pierre,26,mixte 2
+LE SAUZE Christelle,LE SAUZE Nicolas,31,mixte 2
+DISLAIR Sophie,DISLAIR Geoffrey,32,mixte 2
+GREBIN Corinne,GUYON Thierry,33,mixte 2
+MASSAMBA Estelle,MOCELLIN Didier,27,mixte 3
+REYDELLET Estelle,REYDELLET Guillaume,27,mixte 3
+BEDNARSKI Sandrine,PAQUOT Igor,28,mixte 3
+RONDEPIERRE Evelyne,LE DU Denis,31,mixte 3
+CAMBON Martine,BOUGHABA Samir,37,mixte 3
+MONNIER Catherine,MONNIER Jean,35,mixte 3

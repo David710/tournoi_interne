@@ -10,33 +10,20 @@
     / dropdown
     %ul{class: "dropdown-content", id:"dropdown-group1"}
       %li
-        = link_to "Poule 1.1", "/groups/1"
+        = link_to "Poule 1", "/groups/2"
       %li
-        = link_to "Poule 1.2", "/groups/2"
+        = link_to "Poule 2", "/groups/3"
+        %li
+          = link_to "Poule 3", "/groups/4"
 
     %ul{class: "dropdown-content", id:"dropdown-group2"}
       %li
-        = link_to "Poule 2.1", "/groups/3"
+        = link_to "Poule 1", "/groups/5"
       %li
-        = link_to "Poule 2.2", "/groups/4"
+        = link_to "Poule 2", "/groups/6"
       %li
-        = link_to "Poule 2.3", "/groups/5"
-      %li
-        = link_to "Poule 2.4", "/groups/6"
+        = link_to "Poule 3", "/groups/7"
 
-    %ul{class: "dropdown-content", id:"dropdown-group3"}
-      %li
-        = link_to "Poule 3.1", "/groups/7"
-      %li
-        = link_to "Poule 3.2", "/groups/8"
-      %li
-        = link_to "Poule 3.3", "/groups/9"
-
-    %ul{class: "dropdown-content", id:"dropdown-group1f"}
-      %li
-        = link_to "Poule 1.1", "/groups/11"
-      %li
-        = link_to "Poule 1.2", "/groups/12"
 
     %nav
       .nav-wrapper
@@ -44,58 +31,35 @@
           %i.material-icons menu
         %ul{class: "left hide-on-med-and-down", id:"nav-mobile"}
           %li
+            = link_to "Double femmes", "/groups/1"
+          %li
             %a{href: "#", class: "dropdown-button", "data-activates" => "dropdown-group1"}
-              Poules 1 Hommes
+              Double Hommes
               %i{class: ["material-icons", "right"]}
                 arrow_drop_down
+
           %li
             %a{href: "#", class: "dropdown-button", "data-activates" => "dropdown-group2"}
-              Poules 2 Hommes
+              Poules 1 Double Mixte
               %i{class: ["material-icons", "right"]}
                 arrow_drop_down
-          %li
-            %a{href: "#", class: "dropdown-button", "data-activates" => "dropdown-group3"}
-              Poules 3 Hommes
-              %i{class: ["material-icons", "right"]}
-                arrow_drop_down
-          %li
-            = link_to "Tableau final Hommes", "/groups/10"
-          %li
-            %a{href: "#", class: "dropdown-button", "data-activates" => "dropdown-group1f"}
-              Poules 1 Femmes
-              %i{class: ["material-icons", "right"]}
-                arrow_drop_down
-          %li
-            = link_to "Poule 2 Femmes", "/groups/13"
 
         -# Mobile
 
         %ul{class: "side-nav", id:"mobile-demo"}
           %li
-            = link_to "Poule 1.1", "/groups/1"
+            = link_to "Femmes", "/groups/1"
           %li
-            = link_to "Poule 1.2", "/groups/2"
+            = link_to "Poule 1 Hommes", "/groups/2"
           %li
-            = link_to "Poule 2.1", "/groups/3"
+            = link_to "Poule 2 Hommes", "/groups/3"
           %li
-            = link_to "Poule 2.2", "/groups/4"
+            = link_to "Poule 3 Hommes", "/groups/4"
           %li
-            = link_to "Poule 2.3", "/groups/5"
+            = link_to "Poule 1 Mixte", "/groups/5"
           %li
-            = link_to "Poule 2.4", "/groups/6"
+            = link_to "Poule 2 Mixte", "/groups/6"
           %li
-            = link_to "Poule 3.1", "/groups/7"
-          %li
-            = link_to "Poule 3.2", "/groups/8"
-          %li
-            = link_to "Poule 3.3", "/groups/9"
-          %li
-            = link_to "Tableau final Hommes", "/groups/10"
-          %li
-            = link_to "Poule 1.1 femmes", "/groups/11"
-          %li
-            = link_to "Poule 1.2 femmes", "/groups/12"
-          %li
-            = link_to "Poule 2 Femmes", "/groups/13"
+            = link_to "Poule 3 Mixte", "/groups/7"
 
     = yield
