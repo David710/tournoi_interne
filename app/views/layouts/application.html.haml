@@ -10,19 +10,27 @@
     / dropdown
     %ul{class: "dropdown-content", id:"dropdown-group1"}
       %li
-        = link_to "Poule 1", "/groups/2"
+        = link_to "Poule 1", "/groups/1"
       %li
-        = link_to "Poule 2", "/groups/3"
-        %li
-          = link_to "Poule 3", "/groups/4"
+        = link_to "Poule 2", "/groups/2"
 
     %ul{class: "dropdown-content", id:"dropdown-group2"}
       %li
-        = link_to "Poule 1", "/groups/5"
+        = link_to "Poule 1", "/groups/3"
       %li
-        = link_to "Poule 2", "/groups/6"
+        = link_to "Poule 2", "/groups/4"
       %li
-        = link_to "Poule 3", "/groups/7"
+        = link_to "Poule 3", "/groups/5"
+      %li
+        = link_to "Poule 4", "/groups/6"
+      %li
+        = link_to "Poule 5", "/groups/7"
+      %li
+        = link_to "Poule 6", "/groups/8"
+      %li
+        = link_to "Poule 7", "/groups/9"
+      %li
+        = link_to "Poule 8", "/groups/10"
 
 
     %nav
@@ -31,16 +39,14 @@
           %i.material-icons menu
         %ul{class: "left hide-on-med-and-down", id:"nav-mobile"}
           %li
-            = link_to "Double femmes", "/groups/1"
-          %li
             %a{href: "#", class: "dropdown-button", "data-activates" => "dropdown-group1"}
-              Double Hommes
+              Femmes
               %i{class: ["material-icons", "right"]}
                 arrow_drop_down
 
           %li
             %a{href: "#", class: "dropdown-button", "data-activates" => "dropdown-group2"}
-              Poules 1 Double Mixte
+              Hommes
               %i{class: ["material-icons", "right"]}
                 arrow_drop_down
 
@@ -48,18 +54,24 @@
 
         %ul{class: "side-nav", id:"mobile-demo"}
           %li
-            = link_to "Femmes", "/groups/1"
+            = link_to "Poule 1 Femmes", "/groups/1"
           %li
-            = link_to "Poule 1 Hommes", "/groups/2"
+            = link_to "Poule 2 Femmes", "/groups/2"
           %li
-            = link_to "Poule 2 Hommes", "/groups/3"
+            = link_to "Poule 1 Hommes", "/groups/3"
           %li
-            = link_to "Poule 3 Hommes", "/groups/4"
+            = link_to "Poule 2 Hommes", "/groups/4"
           %li
-            = link_to "Poule 1 Mixte", "/groups/5"
+            = link_to "Poule 3 Hommes", "/groups/5"
           %li
-            = link_to "Poule 2 Mixte", "/groups/6"
+            = link_to "Poule 4 Hommes", "/groups/6"
           %li
-            = link_to "Poule 3 Mixte", "/groups/7"
+            = link_to "Poule 5 Hommes", "/groups/7"
+          %li
+            = link_to "Poule 6 Hommes", "/groups/8"
+          %li
+            = link_to "Poule 7 Hommes", "/groups/9"
+          %li
+            = link_to "Poule 8 Hommes", "/groups/10"
 
     = yield
